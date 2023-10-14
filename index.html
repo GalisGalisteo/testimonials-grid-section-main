@@ -4,18 +4,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ["Barlow Semi Condensed", "sans-serif"
+            ],
+          },
+          colors: {
+            primaryViolet: "hsl(263, 55%, 52%)",
+            primaryGray: "hsl(217, 19%, 35%)",
+            primaryBlack: "hsl(219, 29%, 14%)",
+            lightGray: "",
+            grayishBlue: "",
+            whiteSemiTransparent: ""
+          }
+        },
+      }
+    }
+  </script>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap"
+    rel="stylesheet">
 
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
 
 </head>
 
-<body>
-  <main>
-    <section>
+<body class="flex justify-center">
+  <main class="max-w-sm flex flex-col gap-6">
+    <section class="bg-primaryViolet p-9 pt-6 rounded-lg">
       <div>
         <img src="" alt="">
         <div>Daniel Clifford</div>
@@ -33,7 +60,7 @@
         the course, I've successfully switched careers, working as a Software Engineer at a VR startup. ”
       </div>
     </section>
-    <section>
+    <section class="bg-primaryGray p-9 pt-6 rounded-lg">
       <img src="" alt="">
       <div>Jonathan Walters</div>
       <div>Verified Graduate</div>
@@ -44,7 +71,7 @@
         This was one of the best investments I've made in myself. ”
       </div>
     </section>
-    <section>
+    <section class="p-9 pt-6 rounded-lg">
       <img src="" alt="">
       <div>Jeanette Harmon</div>
       <div>Verified Graduate</div>
@@ -54,7 +81,7 @@
         while doing something I love.
       </div>”
     </section>
-    <section>
+    <section class="bg-primaryBlack p-9 pt-6 rounded-lg">
       <img src="" alt="">
       <div>Patrick Abrams</div>
       <div>Verified Graduate</div>
@@ -69,7 +96,7 @@
         an incredible community of smart and amazing people. ”
       </div>
     </section>
-    <section>
+    <section class="p-9 pt-6 rounded-lg">
       <img src="" alt="">
       <div>Kira Whittle</div>
       <div>Verified Graduate</div>
